@@ -9,7 +9,7 @@ class Encryption {
 private:
 	string userMessage;
 	string userPin;
-	unsigned int KEY = ;
+	unsigned char KEY = 11001100;//SHOULD BE AN int?
 public:
 	//CONSTRUCTORS:
 	Encryption();

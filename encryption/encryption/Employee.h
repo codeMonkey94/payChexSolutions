@@ -3,7 +3,10 @@
 #define _EMPLOYEE_
 #include "Person.h"
 using namespace std;
-
+enum shift{shift1 = 1, shift2 = 2, shift3 = 3};
+//SHIFT 1: 0200-1000
+//SHIFT 2: 1000-1800
+//SHIFT 3: 1800-0200
 
 class Employee :Person {
 	//THIS CLASS IS DERIVED FROM THE 
@@ -13,7 +16,7 @@ class Employee :Person {
 protected:
 	double EmployeeID;
 	string DOH;//DATE OF HIRE MM/DD/YYYY
-//	ShiftWorked;//ENUM OF SHIFTS AVAILABLE 
+	enum shift ShiftAssigned;//ENUM OF SHIFTS AVAILABLE 
 	double PayRate;//HOURLY RATE
 	long double Salary;//ANNUAL 
 	double HoursWorked;

@@ -9,6 +9,7 @@ class Encryption {
 private:
 	string userMessage;
 	string userPin;
+	unsigned int KEY = ;
 public:
 	//CONSTRUCTORS:
 	Encryption();
@@ -17,13 +18,21 @@ public:
 	string getPin(void);
 	string getMessage(void);
 	//SETTERS:
-	void setPin(string);
-	//void setpin();
+	void setPin(string);	
 	void setMessage(string);
-	//void setMessage()
+
 //METHODS
 	string cipherMessage();
+	//TAKES THE USERMESSAGE AND ENCRYPTS IT
+	//USES A BIT KEY
+	//RETURNS THE USERMESSAGE ENCRYPTED 
 	string decipherMessage();
+	//TAKES THE ENCRYPTED USERMESSAGE AND DECIPHERS IT
+	//USES A BIT KEY
+	//RETURNS THE USERMESSAGE UN-ENCRYPTED 
 	bool verifyPin(string);
+	//VALIDATES USERS PIN
+	//RETURNS TRUE IF ENTERED CORRECT
+	//ELSE FALSE
 };
 #endif

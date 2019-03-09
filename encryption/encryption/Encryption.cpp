@@ -34,28 +34,24 @@ string Encryption::cipherMessage() {
 		userMessage[currentLetter] ^= KEY;//BITWISE XOR
 	}
 
-	return userMessage;//return encrypted string 
+	return userMessage;//ENCRYPTED MSG
 }
 string Encryption::decipherMessage() {
 	int i = 0, counter = 0;
 	if (verifyPin) {
 		while (!this->userMessage.end() {//NOT THE END OF STRING BUILT-IN CLASS
 			counter++;//LIMIT FOR THE FOR LOOP
-			i++;//INCREMENTS THROUGH THE STRING
 		}
 		for (int currentLetter = 0; currentLetter < counter; currentLetter++) {
 			this->userMessage[currentLetter] ^= KEY;
 		}
-		system("cls");
-		return this->userMessage;
+		return this->userMessage;//RET DECRYPTED MSG
 	}
-	return nullptr;//OR RETURN ENCRYPTED MESSAGE???
+	return this->userMessage;//RET ENCRYPT MSG
 }
 bool Encryption::verifyPin(string pinAttempt) {
-	if (this->userPin == pinAttempt) {
+	if (this->userPin == pinAttempt) 
 		return true;
-	}
-	else {
+	else 
 		return false;
-	}
 }

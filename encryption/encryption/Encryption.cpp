@@ -39,7 +39,7 @@ string Encryption::cipherMessage() {
 string Encryption::decipherMessage() {
 	int i = 0, counter = 0;
 	if (verifyPin) {
-		while (this->userMessage[i] != 46) {
+		while (!this->userMessage.end() {//NOT THE END OF STRING BUILT-IN CLASS
 			counter++;//LIMIT FOR THE FOR LOOP
 			i++;//INCREMENTS THROUGH THE STRING
 		}

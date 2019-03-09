@@ -1,0 +1,10 @@
+﻿  Employee.cpp
+  Encryption.cpp
+c:\users\hillm\documents\paychexsolutions\encryption\encryption\encryption.cpp(31): warning C4305: 'initializing': truncation from 'int' to 'unsigned char'
+c:\users\hillm\documents\paychexsolutions\encryption\encryption\encryption.cpp(31): warning C4309: 'initializing': truncation of constant value
+c:\users\hillm\documents\paychexsolutions\encryption\encryption\encryption.cpp(46): warning C4305: 'initializing': truncation from 'int' to 'unsigned char'
+c:\users\hillm\documents\paychexsolutions\encryption\encryption\encryption.cpp(46): warning C4309: 'initializing': truncation of constant value
+c:\users\hillm\documents\paychexsolutions\encryption\encryption\encryption.cpp(48): error C3867: 'Encryption::verifyPin': non-standard syntax; use '&' to create a pointer to member
+  main.cpp
+  Person.cpp
+  Generating Code...

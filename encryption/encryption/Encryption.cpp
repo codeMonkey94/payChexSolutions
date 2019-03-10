@@ -37,7 +37,7 @@ string Encryption::decipherMessage() {
 	{
 		userMessage[currentLetter] ^= KEY;//BITWISE XOR
 	}
-	return userMessage;//ENCRYPTED MSG
+	return userMessage;
 }
 bool Encryption::verifyPin(string pinAttempt) {
 	if (this->userPin == pinAttempt) 

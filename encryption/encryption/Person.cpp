@@ -33,6 +33,9 @@ void Person::setMiddleName(string middle) {
 void Person::setAge(int age) {
 	this->Age = age;
 }
+void Person::setSSN(long double ssn) {
+	this->SSN = ssn;
+}
 void Person::setGender(char gender) {
 	//NOTE THIS FUNCTION USES LOWER CASE VALUES
 	// ENSURE THAT THE VALUES ARE BETEWEEN 97-122
@@ -56,13 +59,13 @@ char Person::getGender() {
 int Person::getAge() {
 	return this->Age;
 }
-double Person::getSSN() {
+long double Person::getSSN() {
 	return this->SSN;
 }
 
 //METHODS:
 void Person::displayPerson() {
-	cout << LastName << ", " << FirstName << ", " << MiddleName << "--" << SSN;
+	cout << LastName << ", " << FirstName << ", " << MiddleName << "--" << SSN<<"("<<Gender<<")";
 
 }
 Person Person::getPerson() {

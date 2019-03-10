@@ -9,11 +9,11 @@ class Encryption {
 private:
 	string userMessage;
 	string userPin;
-	unsigned char KEY = 11001100;//SHOULD BE AN int?
+	unsigned int KEY = 11001100;//SHOULD BE AN int?
 public:
 	//CONSTRUCTORS:
 	Encryption();
-	Encryption(string, string);
+	Encryption(string, string);//PIN, MESSAGE
 	//GETTERS:
 	string getPin(void);
 	string getMessage(void);

@@ -24,30 +24,23 @@ void Encryption::setMessage(string userMessage) {
 }
 //METHODS:
 string Encryption::cipherMessage() {	
-	int counter = 0;
-	while (!this->userMessage.end())//READ STRING UNTIL THE END
-	{
-		counter++;//NUMBER OF CHAR IN STRING	
-	}
-	for (int currentLetter = 0; currentLetter < counter; currentLetter++)
+	int messageLength = this->userMessage.length();//LENGTH OF THE STRING
+	for (int currentLetter = 0; currentLetter < messageLength; currentLetter++)
 	{
 		userMessage[currentLetter] ^= KEY;//BITWISE XOR
 	}
-
 	return userMessage;//ENCRYPTED MSG
 }
 string Encryption::decipherMessage() {
-	int i = 0, counter = 0;
-	if (verifyPin) {
-		while (!this->userMessage.end() {//NOT THE END OF STRING BUILT-IN CLASS
-			counter++;//LIMIT FOR THE FOR LOOP
-		}
-		for (int currentLetter = 0; currentLetter < counter; currentLetter++) {
-			this->userMessage[currentLetter] ^= KEY;
-		}
-		return this->userMessage;//RET DECRYPTED MSG
+	int messageLength = this->userMessage.length();//LENGTH OF THE STRING	
+	for (int currentLetter = 0; currentLetter < messageLength; currentLetter++)
+	{
+		userMessage[currentLetter] ^= KEY;//BITWISE XOR
 	}
-	return this->userMessage;//RET ENCRYPT MSG
+	return userMessage;//ENCRYPTED MSG
+
+	//ELSE RET ENCRYPTED MSG
+	return this->userMessage;
 }
 bool Encryption::verifyPin(string pinAttempt) {
 	if (this->userPin == pinAttempt) 

@@ -11,7 +11,7 @@ protected:
 	string MiddleName;
 	int Age;
 	char Gender;
-	double SSN;
+	long double SSN;
 
 public:
 	//CONSTRUCTORS:
@@ -27,7 +27,7 @@ public:
 	void setMiddleName(string x);
 	void setGender(char i);
 	void setAge(int y);
-	void setSSN(double y);
+	void setSSN(long double y);
 
 	//GETTERS:
 	string getLastName();
@@ -35,7 +35,7 @@ public:
 	string getMiddleName();
 	char getGender();
 	int getAge();
-	double getSSN();
+	long double getSSN();
 
 	Person getPerson();
 	//RETURNS PERSON INFO IN A PERSON OBJECT

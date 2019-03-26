@@ -1,6 +1,8 @@
 #pragma once
 #ifndef _EMPLOYEE_
 #define _EMPLOYEE_
+#include <iostream>
+#include <string>
 #include "Person.h"
 using namespace std;
 enum shift{shift1 = 1, shift2 = 2, shift3 = 3};
@@ -32,9 +34,21 @@ public:
 	//METHOD CREATES INSTANCE OF PERSON CLASS
 
 	//SETTERS:
-
+    void setEmployeeID(double);
+    void setDOH(string);
+    void setShiftWorked(enum);
+    void setPayRate(double);
+    void setSalary(long double);
+    void setHoursWorked(double);
+    void setOTWorked(double);
 	//GETTERS:
+    double getEmployeeID();
+    string getDOH();
+    enum getShiftWorked();
+    double getPayRate();
+    long double getSalary();
+    double getHoursWorked();
+    double getOTWorked();
 	//METHODS:
-
 };
 #endif

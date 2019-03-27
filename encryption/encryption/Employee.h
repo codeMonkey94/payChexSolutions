@@ -18,7 +18,7 @@ class Employee :Person {
 protected:
 	double EmployeeID;
 	string DOH;//DATE OF HIRE MM/DD/YYYY
-	enum shift ShiftAssigned;//ENUM OF SHIFTS AVAILABLE 
+	shift ShiftAssigned;//ENUM OF SHIFTS AVAILABLE 
 	double PayRate;//HOURLY RATE
 	long double Salary;//ANNUAL 
 	double HoursWorked;
@@ -26,6 +26,7 @@ protected:
 
 public:
 	//CONSTRUCTORS:
+	Employee();
 	Employee(string, string);
 	//LAST, FIRST 
 	//METHOD CREATES INSTANCE OF PERSON CLASS
@@ -34,17 +35,17 @@ public:
 	//METHOD CREATES INSTANCE OF PERSON CLASS
 
 	//SETTERS:
-    void setEmployeeID(double);
     void setDOH(string);
-    void setShiftWorked(enum);
+    void setShiftWorked(shift);
     void setPayRate(double);
     void setSalary(long double);
     void setHoursWorked(double);
     void setOTWorked(double);
+	void setEmployeeID(double);//REMOVE LATER ID WILL BE SET FROM THE DATABASE
 	//GETTERS:
     double getEmployeeID();
     string getDOH();
-    enum getShiftWorked();
+    shift getShiftWorked();
     double getPayRate();
     long double getSalary();
     double getHoursWorked();
